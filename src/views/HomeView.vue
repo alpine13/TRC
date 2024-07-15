@@ -39,7 +39,7 @@ function changeActiveIndex(i) {
 
 <template>
   <section class="relative lg:overflow-hidden">
-    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-24">
+    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-[84px]">
       <!-- Content -->
       <div class="flex flex-1 flex-col items-center lg:items-start">
         <h2
@@ -71,7 +71,7 @@ function changeActiveIndex(i) {
   <section class="bg-bookmark-white py-20 mt-20 lg:mt-60 lg:overflow-hidden">
     <!-- Heading -->
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-      <h1 class="text-3xl text-center text-bookmark-blue">Informaţii</h1>
+      <h1 class="text-4xl text-center text-bookmark-blue font-Lucky">Info</h1>
       <p class="text-center text-bookmark-grey mt-4">
         Our aim is to make it quick and easy for you to access your favourite websites. Your
         bookmarks sync between your devices so you can access them on the go.
@@ -164,7 +164,7 @@ function changeActiveIndex(i) {
   <section class="py-20 mt-20">
     <!-- Heading -->
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-      <h1 class="text-4xl text-center text-bookmark-blue">Atelier pictură</h1>
+      <h1 class="text-4xl text-center text-bookmark-blue font-Lucky">Atelier de pictura</h1>
       <p class="text-center text-bookmark-grey mt-4">
         Atelierul de pictură revine şi în cadrul celei de a 2-a ediţie a Turu Rosu Challenge.
         Alege-ţi kit-ul care vi se potriveşte!
@@ -192,7 +192,7 @@ function changeActiveIndex(i) {
         <div class="flex p-6">
           <button
             type="button"
-            class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+            class="flex-1 btn text-white bg-gray-900 hover:bg-bookmark-white hover:text-black"
           >
             Înscrie-te!
           </button>
@@ -217,7 +217,7 @@ function changeActiveIndex(i) {
         <div class="flex p-6">
           <button
             type="button"
-            class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+            class="flex-1 btn text-white bg-bookmark-purple hover:bg-bookmark-white hover:text-black"
           >
             Înscrie-te!
           </button>
@@ -242,7 +242,7 @@ function changeActiveIndex(i) {
         <div class="flex p-6">
           <button
             type="button"
-            class="flex-1 btn btn-purple hover:bg-bookmark-white hover:text-black"
+            class="flex-1 btn text-white bg-gray-900 hover:bg-bookmark-white hover:text-black"
           >
             Înscrie-te!
           </button>
@@ -256,7 +256,9 @@ function changeActiveIndex(i) {
     <div class="container">
       <!-- Heading -->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-blue">Frequently Asked Questions</h1>
+        <h1 class="text-3xl text-center text-bookmark-blue font-Lucky">
+          Frequently Asked Questions
+        </h1>
         <p class="text-center text-bookmark-grey mt-4">
           Aici sunt câteva dintre întrebările puse cel mai frecvent. Dacă aveţi altele pe lângă cele
           prezentate nu ezitaţi să ne contactaţi!
@@ -282,8 +284,18 @@ function changeActiveIndex(i) {
     </div>
   </section>
 
+  <section class="py-20 mt-20">
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-4xl text-center text-bookmark-blue font-Lucky">Parteneri</h1>
+      <p class="text-center text-bookmark-grey mt-4">
+        Mulţumim partenerilor noştri pentru implicarea în realizarea, promovarea şi dezvoltarea
+        celei de a II-a ediţii a concursului Turnu Roşu Challenge
+      </p>
+    </div>
+  </section>
+
   <!-- Contact Us -->
-  <section class="bg-bookmark-purple text-white py-20">
+  <section class="bg-bookmark-purple text-white py-20 mt-5">
     <div class="container">
       <div class="sm:w-3/4 lg:w-2/4 mx-auto">
         <p class="font-light uppercase text-center mb-8">200+ PARTICIPANŢI</p>
@@ -302,49 +314,10 @@ function changeActiveIndex(i) {
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 py-8">
-    <div class="container flex flex-col md:flex-row items-center">
-      <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
-        <h3 class="text-white text-xl"><a>Turnu Rosu Challenge</a></h3>
-        <ul class="flex text-white uppercase gap-12 text-xs">
-          <li class="cursor-pointer hover-underline-animation transition-duration:150ms white">
-            <RouterLink :to="{ name: 'inscrieri' }">Înscrieri</RouterLink>
-          </li>
-          <li class="cursor-pointer hover-underline-animation transition-duration:150ms white">
-            <RouterLink :to="{ name: 'regulament' }">Regulament</RouterLink>
-          </li>
-          <li class="cursor-pointer hover-underline-animation transition-duration:150ms white">
-            <RouterLink :to="{ name: 'contact' }">Contact</RouterLink>
-          </li>
-        </ul>
-      </div>
-      <div class="flex gap-10 mt-12 md:mt-0">
-        <li>
-          <a
-            href="https://www.instagram.com/turnurosuchallenge?igsh=MXNsbWgyZzRlOTVpcw=="
-            target="_blank"
-            ><i class="text-white text-2xl fab fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/people/Turnu-Ro%C8%99u-Challenge/61550549625676/"
-            target="_blank"
-            ><i class="text-white text-2xl fab fa-facebook-square"></i
-          ></a>
-        </li>
-      </div>
-    </div>
-  </footer>
   <RouterView></RouterView>
 </template>
 
 <style scoped>
-.white {
-  color: white !important;
-}
-
 .accordion-content {
   max-height: 0;
   opacity: 0;
