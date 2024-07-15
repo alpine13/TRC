@@ -82,11 +82,7 @@ function changeActiveIndex(i) {
       <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
         <!-- Image -->
         <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-          <img
-            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-            src="./imgs/illustration-features-tab-1.png"
-            alt=""
-          />
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="" alt="" />
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -113,11 +109,7 @@ function changeActiveIndex(i) {
       <div class="container flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
         <!-- Image -->
         <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-          <img
-            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-            src="./imgs/illustration-features-tab-2.png"
-            alt=""
-          />
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="" alt="" />
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
@@ -144,11 +136,7 @@ function changeActiveIndex(i) {
       <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
         <!-- Image -->
         <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
-          <img
-            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
-            src="./imgs/illustration-features-tab-3.png"
-            alt=""
-          />
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="" alt="" />
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
