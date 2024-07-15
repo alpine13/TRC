@@ -78,14 +78,18 @@ function goToHome() {
           <a
             href="https://www.instagram.com/turnurosuchallenge?igsh=MXNsbWgyZzRlOTVpcw=="
             target="_blank"
-            ><i class="text-white text-2xl fab fa-instagram"></i
+            ><i
+              class="text-white text-2xl fab fa-instagram hover:text-bookmark-purple hover:scale-105 transition-100"
+            ></i
           ></a>
         </li>
         <li>
           <a
             href="https://www.facebook.com/people/Turnu-Ro%C8%99u-Challenge/61550549625676/"
             target="_blank"
-            ><i class="text-white text-2xl fab fa-facebook-square"></i
+            ><i
+              class="text-white text-2xl fab fa-facebook-square hover:text-bookmark-purple hover:scale-105 transition-100"
+            ></i
           ></a>
         </li>
       </div>
