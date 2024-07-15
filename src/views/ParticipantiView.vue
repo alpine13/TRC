@@ -23,29 +23,59 @@ onMounted(async () => {
       Lista cu persoanele deja înscrise la ediţia curentă a concursul de alergare montană şi hiking
       <strong>Turnu Roşu Challenge.</strong>
     </p>
-    <table
-      class="bg-gray-600 w-full text-white border-none font-normal rounded-xl text-xs md:text-base m-4 ml-2"
-    >
-      <thead>
+    <table class="bg-gray-600 w-full text-white border-none font-normal text-xs md:text-base ml-0">
+      <thead class="bg-gray-800 rounded-xl">
         <tr>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400 w-[6%]">Nr.</th>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400 w-[30%]">Nume şi prenume</th>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400 w-[15%]">Traseu</th>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400 w-[10%]">Categorie</th>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400 w-[25%]">Reşedinţa</th>
-          <th class="py-2 px-2 sm:px-4 border-b border-gray-400">Confirmat</th>
+          <th
+            class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400 w-[6%]"
+          >
+            Nr.
+          </th>
+          <th
+            class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400 w-[28%]"
+          >
+            Nume şi prenume
+          </th>
+          <th
+            class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400 w-[17%]"
+          >
+            Traseu
+          </th>
+          <th
+            class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400 w-[10%]"
+          >
+            Categorie
+          </th>
+          <th
+            class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400 w-[25%]"
+          >
+            Reşedinţa
+          </th>
+          <th class="py-2 px-2 sm:px-4 border-b font-normal md:font-semibold border-gray-400">
+            Confirmat
+          </th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="participant in participanti" :key="participant.id">
-          <td class="py-2 px-2 border-r border-gray-400 sm:px-4">1</td>
-          <td class="py-2 px-2 border-r border-gray-400 sm:px-4">
+        <tr
+          v-for="(participant, index) in participanti"
+          :key="participant.id"
+          :class="{ 'bg-gray-700': (index + 1) % 2 == 0 }"
+        >
+          <td class="py-2 px-2 border-b border-r border-gray-400 sm:px-4">{{ index + 1 }}</td>
+          <td class="py-2 px-2 border-b border-r border-gray-400 sm:px-4">
             {{ participant.nume }} {{ participant.prenume }}
           </td>
-          <td class="py-2 px-2 border-r border-gray-400 sm:px-4">{{ participant.cursa }}</td>
-          <td class="py-2 px-2 border-r border-gray-400 sm:px-4">{{ participant.categoria }}</td>
-          <td class="py-2 px-2 border-r border-gray-400 sm:px-4">{{ participant.localitate }}</td>
-          <td class="py-2 px-2 sm:px-4">{{ participant.confirmat }}</td>
+          <td class="py-2 px-2 border-b border-r border-gray-400 sm:px-4">
+            {{ participant.cursa }}
+          </td>
+          <td class="py-2 px-2 border-b border-r border-gray-400 sm:px-4">
+            {{ participant.categoria }}
+          </td>
+          <td class="py-2 px-2 border-b border-r border-gray-400 sm:px-4">
+            {{ participant.localitate }}
+          </td>
+          <td class="py-2 px-2 border-b sm:px-4">{{ participant.confirmat }}</td>
         </tr>
       </tbody>
     </table>
