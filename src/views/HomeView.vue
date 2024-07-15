@@ -73,8 +73,8 @@ function changeActiveIndex(i) {
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
       <h1 class="text-4xl text-center text-bookmark-blue font-Lucky">Info</h1>
       <p class="text-center text-bookmark-grey mt-4">
-        Our aim is to make it quick and easy for you to access your favourite websites. Your
-        bookmarks sync between your devices so you can access them on the go.
+        Turnu Roşu Challenge promite o ediţie şi mai frumoasă decât cea anterioară! Nu rata ocazia
+        şi înscrie-te la provocarea oferită de echipa noastră!
       </p>
     </div>
     <!-- Feature #1 -->
@@ -86,10 +86,11 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Bookmark in one click</h1>
+          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-            Organize your bookmarks however you like. Our simple drag-and-drop interface gives you
-            complete control over how you manage your favourite sites.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
+            exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
+            distinctio aut asperior
           </p>
           <button
             type="button"
@@ -113,10 +114,11 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Intelligent search</h1>
+          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-            Our powerful search feature will help you find saved sites in no time at all. No need to
-            crawl through all of your bookmarks.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
+            exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
+            distinctio aut asperior
           </p>
           <button
             type="button"
@@ -140,10 +142,11 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Share your bookmarks</h1>
+          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-            Easily share your bookmarks and collections with others. Create a shareable link that
-            you can send at the click of a button.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
+            exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
+            distinctio aut asperior
           </p>
           <button
             type="button"

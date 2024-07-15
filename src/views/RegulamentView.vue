@@ -40,7 +40,7 @@ const info2 = [
 ];
 </script>
 <template>
-  <div class="sm:w-3/4 lg:w-6/12 mx-auto px-3 container mt-16 font-Poppins">
+  <div class="sm:w-3/4 lg:w-6/12 mx-auto px-3 container mt-16 font-Poppins mb-10">
     <h1 class="text-4xl md:text-5xl text-center text-gray-800 font-Lucky">Regulament</h1>
     <p class="text-center text-gray-700 mt-6 mb-4">
       Acest regulament se aplică participanților la concursul pentru copii și adulți, “Turnu Roșu

@@ -5,8 +5,8 @@ import ScrollToTopBtn from './components/ScrollToTopBtn.vue';
 
 const router = useRouter();
 
-function goToContact() {
-  router.push({ name: 'contact' });
+function goToInscrieri() {
+  router.push({ name: 'inscrieri' });
 }
 
 function goToHome() {
@@ -42,15 +42,16 @@ function goToHome() {
           <button
             type="button"
             class="btn btn-purple rounded-lg px-7 py-3 uppercase hover:bg-black"
-            @click="goToContact"
+            @click="goToInscrieri()"
           >
-            Contact
+            Inscrieri
           </button>
         </ul>
         <div class="flex sm:hidden flex-1 justify-end">
           <i class="text-2xl fas fa-bars"></i>
         </div>
       </nav>
+      <!-- <div v-show="" class="w-1/2 mx-auto mt-2 bg-gray-300 h-[2px]"></div> -->
     </header>
   </div>
   <scrollToTopBtn></scrollToTopBtn>
@@ -60,7 +61,7 @@ function goToHome() {
     <div class="container flex flex-col md:flex-row items-center">
       <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
         <h3 class="text-white text-xl"><a>Turnu Rosu Challenge</a></h3>
-        <ul class="flex text-white uppercase gap-12 text-xs">
+        <ul class="flex text-white uppercase gap-12 text-xs tracking-wide">
           <li class="cursor-pointer hover-underline-animation transition-duration:150ms white">
             <RouterLink :to="{ name: 'inscrieri' }">Înscrieri</RouterLink>
           </li>
