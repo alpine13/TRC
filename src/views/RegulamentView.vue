@@ -43,7 +43,7 @@ const info2 = [
   <div class="sm:w-3/4 lg:w-6/12 mx-auto px-3 container mt-16 font-Poppins mb-10">
     <h1 class="text-4xl md:text-5xl text-center text-gray-800 font-Lucky">Regulament</h1>
     <p class="text-center text-gray-700 mt-6 mb-4">
-      Acest regulament se aplică participanților la concursul pentru copii și adulți, “Turnu Roșu
+      Acest regulament se aplică participanților la concursul “Turnu Roșu
       Challenge”. Evenimentul va avea loc în Comuna Turnu Roșu, jud. Sibiu, locul de desfășurare al
       evenimentului fiind spațiul din apropierea Mănăstirii Turnu Roșu.
     </p>
@@ -94,11 +94,9 @@ const info2 = [
         <thead>
           <tr>
             <th class="py-2 px-2 sm:px-4 border-b border-gray-700">Cursă/Vârstă</th>
-            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">18-29</th>
-            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">30-39</th>
-            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">40-49</th>
-            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">50-59</th>
-            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">60+</th>
+            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">18-35</th>
+            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">36-49</th>
+            <th class="py-2 px-2 sm:px-4 border-b border-gray-700">50+</th>
           </tr>
         </thead>
         <tbody>
@@ -107,18 +105,30 @@ const info2 = [
             <td class="py-2 px-2 sm:px-4">M/F</td>
             <td class="py-2 px-2 sm:px-4">M/F</td>
             <td class="py-2 px-2 sm:px-4">M/F</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="py-2 px-2 sm:px-4">Semimaraton</td>
+            <td class="py-2 px-2 sm:px-4">M/F</td>
             <td class="py-2 px-2 sm:px-4">M/F</td>
             <td class="py-2 px-2 sm:px-4">M/F</td>
           </tr>
         </tbody>
       </table>
       <p class="text-gray-700 p-1 mt-5 mb-3">
-        Dacă o categorie de vârstă are mai puțin de 3 participanți, aceasta se comasează cu o altă
-        categorie de vârstă.
+        Se premiază fiecare categorie de vârstă indiferent de numărul de participanți înscriși.
       </p>
     </section>
     <section class="p-1">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">6. Premii</h2>
+
+      <p class="text-gray-700 p-1 mt-5 mb-3">
+        <ul><strong>Semimaraton</strong>
+          <li>– se premiază primele 3 locuri la OPEN M/F ;</li>
+          <li>– se premiază primele 3 locuri la fiecare categorie M/F ;</li>      
+        </ul>
+      </p>
 
       <p class="text-gray-700 p-1 mt-5 mb-3">
         <strong>Cursa de Cros</strong> – se premiază primele 3 locuri la fiecare categorie, iar
