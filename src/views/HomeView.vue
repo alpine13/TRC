@@ -48,8 +48,8 @@ function changeActiveIndex(i) {
           Turnu Rosu Challenge
         </h2>
         <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
-          Înscrie-te la Turnu Roșu Challenge pe
-          <span class="text-orange-400">22 septembrie!</span> Explorează trasee montane uimitoare la
+          Înscrie-te la Turnu Roșu Challenge până pe
+          <span class="text-orange-400">15 septembrie!</span> Explorează trasee montane uimitoare la
           a doua ediție a evenimentului nostru de alergare și hiking!
         </p>
         <div class="flex justify-center flex-wrap gap-6 font-Lucky tracking-widest">
@@ -86,11 +86,10 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
+          <h1 class="text-3xl text-bookmark-blue">Curse</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
-            exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
-            distinctio aut asperior
+            Anul acesta avem cu doua curse : un cros de 11 km si un semimaraton de 21 km dar si o cursă 
+            necompetitivă de hiking unde vă așteptă un gulaș delicios la finish.
           </p>
           <button
             type="button"
