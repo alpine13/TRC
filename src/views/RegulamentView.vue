@@ -64,16 +64,17 @@ const info2 = [
     <section class="p-1">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">4. Taxa de participare</h2>
       <div
-        class="grid grid-rows-2 grid-cols-2 justify-items-center text-white bg-gray-800 font-bold rounded-xl text-normal lg:text-lg m-4 ml-2"
+        class="grid grid-rows-3 grid-cols-3 justify-items-center text-white bg-gray-800 font-bold rounded-xl text-normal lg:text-lg m-4 ml-2"
       >
-        <p class="p-2">CROS</p>
+        <p class="p-2">Semimaraton</p>
+        <p class="p-2">Cros</p>
         <p class="p-2">Power Hiking</p>
+        <p class="p-2">140 RON</p>
+        <p class="p-2">110 RON</p>
         <p class="p-2">90 RON</p>
-        <p class="p-2">70 RON</p>
       </div>
       <p class="text-gray-700 p-1 mt-5 mb-3">
-        Taxa de participare se poate achita prin transfer bancar odată cu înscrierea sau ulterior
-        prin accesarea link-ului din mail-ul de confirmare a înscrierii.
+        Taxa de participare se poate achita cu cardul la înscrierea pe racehub.ro
       </p>
       <p class="text-gray-700 p-1 mt-3 mb-3">
         În caz de neprezentare la start, abandon sau retragere din orice motiv, taxa de participare
@@ -126,19 +127,19 @@ const info2 = [
       <p class="text-gray-700 p-1 mt-5 mb-3">
         <ul><strong>Semimaraton</strong>
           <li>– se premiază primele 3 locuri la OPEN M/F ;</li>
-          <li>– se premiază primele 3 locuri la fiecare categorie M/F ;</li>      
+          <li>– se premiază primele 3 locuri la fiecare categorie M/F ;</li>
+          <li>– dacă unul din concurenți a fost premiat la categoria OPEN, acesta nu mai poate fi premiat și la categorie;</li>   
         </ul>
       </p>
-
       <p class="text-gray-700 p-1 mt-5 mb-3">
-        <strong>Cursa de Cros</strong> – se premiază primele 3 locuri la fiecare categorie, iar
-        primele 5 locuri la OPEN or să fie notate pe un leaderboard, plus medalie de finisher pentru
-        toți participanții.
+        <ul><strong>Cros</strong>
+          <li>– se premiază primele 3 locuri la OPEN M/F ;</li>
+          <li>– primele 5 locuri la OPEN vor fi trecute pe LEADERBOARD</li>
+          <li>– se premiază primele 3 locuri la fiecare categorie M/F ;</li>
+          <li>– dacă unul din concurenți a fost premiat la categoria OPEN, acesta nu mai poate fi premiat și la categorie;</li>
+        </ul>
       </p>
-      <p class="text-gray-700 p-1 mt-3 mb-3">
-        <strong>Cursa de Power Hiking</strong> – toți participanții primesc medalie de finisher
-        fiind o drumeție de tip necompetitivă.
-      </p>
+      <p class="text-gray-700 p-1 mt-5 mb-3"> Premile vor consta în bunătăți din cămara noastră și trofee</p>
     </section>
     <section class="p-1">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">7. Proceduri de concurs</h2>
