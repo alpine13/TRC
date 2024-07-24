@@ -3,7 +3,7 @@ const info1 = [
   {
     title: '1. Caracteristici ale competiției',
     content:
-      'Turnu Roșu Challenge este o competiție de alergare cu caracter submontan. Traseul se desfășoară pe poteci marcate în Turnu Roșu și pe dealurile de la poalele munților Făgăraș fiind poarta de intrare spre Munții Făgăraș. Suprafața de alergare a traseelor este formată din: drum forestier, în marea majoritate poteci naturale și pășuni, adică iarbă și pământ. Vârsta minimă pentru înscriere este 18 ani la cursele de Cros. Toți participanții sunt obligați să completeze formularul de înscriere online și declarația pe proprie răspundere, care atestă luarea la cunoștință a condițiilor și regulilor competiției. Formatul concursului Power Hiking este unul nou, se încurajează participarea oamenilor care vor să parcurgă un traseu într-un ritm mai susținut dar nu alergabil, bineînțeles se poate si alerga daca se dorește.'
+      'Turnu Roșu Challenge este o competiție de alergare cu caracter submontan. Traseul se desfășoară pe poteci marcate în Turnu Roșu și pe dealurile de la poalele munților Făgăraș fiind poarta de intrare spre Munții Făgăraș. Suprafața de alergare a traseelor este formată din: drum forestier, în marea majoritate poteci naturale și pășuni, adică iarbă și pământ. Vârsta minimă pentru înscriere este 18 ani la cursele de Cros și Semimaraton. Toți participanții sunt obligați să completeze formularul de înscriere online și declarația pe proprie răspundere, care atestă luarea la cunoștință a condițiilor și regulilor competiției. Formatul Power Hiking este unul nou, se încurajează participarea oamenilor care vor să parcurgă un traseu într-un ritm mai susținut sau mai lejer,competiția fiind necronometrată'
   },
   {
     title: '2. Obligațiile participanților',
@@ -50,6 +50,16 @@ const info2 = [
     <section class="p-1" v-for="(item, index) in info1" :key="index">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">{{ item.title }}</h2>
       <p class="text-gray-700 p-1 mt-3 mb-3">{{ item.content }}</p>
+    </section>
+    <section class="p-1">
+      <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold"> 2. Obligațiile participanților </h2>
+      <div
+        class="grid grid-rows-2 grid-cols-2 justify-items-center text-white bg-gray-800 font-bold rounded-xl text-normal lg:text-lg m-4 ml-2"
+      >
+      <ul>
+        <li>fiecare participant să aibă cel puțin o experiență generală despre concursurile de alergare, fiind pregătit din punct de vedere al condiției fizice.</li>
+      </ul>
+      </div>
     </section>
     <section class="p-1">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">4. Taxa de participare</h2>
