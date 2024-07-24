@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView } from 'vue-router';
 import { useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const router = useRouter();
 
@@ -35,11 +35,42 @@ let activeIndex = ref(null);
 function changeActiveIndex(i) {
   activeIndex.value = i;
 }
+
+const targetDate = new Date('2024-09-22T09:00:00');
+const timeRemaining = ref({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+function updateCountdown() {
+  const now = new Date();
+  const timeDiff = targetDate - now;
+
+  if (timeDiff > 0) {
+    timeRemaining.value = {
+      days: Math.floor(timeDiff / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds: Math.floor((timeDiff % (1000 * 60)) / 1000)
+    };
+  } else {
+    // Time is up
+    timeRemaining.value = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+}
+
+onMounted(() => {
+  updateCountdown();
+  const interval = setInterval(updateCountdown, 1000);
+
+  onUnmounted(() => {
+    clearInterval(interval);
+  });
+});
 </script>
 
 <template>
   <section class="relative lg:overflow-hidden">
-    <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-[84px]">
+    <div
+      class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-6 md:mt-14 lg:mt-[74px]"
+    >
       <!-- Content -->
       <div class="flex flex-1 flex-col items-center lg:items-start">
         <h2
@@ -52,12 +83,46 @@ function changeActiveIndex(i) {
           <span class="text-orange-400">15 septembrie!</span> Explorează trasee montane uimitoare la
           a doua ediție a evenimentului nostru de alergare și hiking!
         </p>
-        <div class="flex justify-center flex-wrap gap-6 font-Lucky tracking-widest">
+
+        <!-- Countdown Timer -->
+        <div
+          v-if="timeRemaining"
+          class="countdown text-center lg:text-left p-4 bg-white rounded-lg w-5/6"
+        >
+          <div class="flex justify-center gap-4 space-x-4 text-2xl font-semibold">
+            <div class="countdown-item flex flex-col items-center">
+              <span class="countdown-number text-4xl font-bold text-orange-500">{{
+                timeRemaining.days
+              }}</span>
+              <span class="countdown-label text-gray-700">zile</span>
+            </div>
+            <div class="countdown-item flex flex-col items-center">
+              <span class="countdown-number text-4xl font-bold text-orange-500">{{
+                timeRemaining.hours
+              }}</span>
+              <span class="countdown-label text-gray-700">ore</span>
+            </div>
+            <div class="countdown-item flex flex-col items-center">
+              <span class="countdown-number text-4xl font-bold text-orange-500">{{
+                timeRemaining.minutes
+              }}</span>
+              <span class="countdown-label text-gray-700">minute</span>
+            </div>
+            <div class="countdown-item flex flex-col items-center">
+              <span class="countdown-number text-4xl font-bold text-orange-500">{{
+                timeRemaining.seconds
+              }}</span>
+              <span class="countdown-label text-gray-700">secunde</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center flex-wrap gap-6 font-Lucky w-5/6 tracking-widest">
           <button type="button" class="join-btn" @click="goToInscrieri">Inscrieri</button>
         </div>
       </div>
       <!-- Image -->
-      <div class="flex justify-center flex-1 mb-6 md:mb-16 lg:mb-0 z-10">
+      <div class="flex justify-center flex-1 mb-2 md:mb-16 lg:mb-0 z-10">
         <img
           class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full max-w-[550px]"
           src="../assets/images/mountain.png"
@@ -71,7 +136,7 @@ function changeActiveIndex(i) {
   <section class="bg-bookmark-white py-20 mt-20 lg:mt-60 lg:overflow-hidden">
     <!-- Heading -->
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-      <h1 class="text-4xl text-center text-bookmark-blue font-Lucky">Info</h1>
+      <h1 class="text-4xl lg:text-5xl text-center text-bookmark-blue font-Lucky">Info</h1>
       <p class="text-center text-bookmark-grey mt-4">
         Turnu Roşu Challenge promite o ediţie şi mai frumoasă decât cea anterioară! Nu rata ocazia
         şi înscrie-te la provocarea oferită de echipa noastră!
@@ -86,10 +151,10 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Curse</h1>
+          <h1 class="text-3xl text-bookmark-blue font-Lucky">Curse</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
-            Anul acesta avem cu doua curse : un cros de 11 km si un semimaraton de 21 km dar si o cursă 
-            necompetitivă de hiking unde vă așteptă un gulaș delicios la finish.
+            Anul acesta avem cu doua curse : un cros de 11 km si un semimaraton de 21 km dar si o
+            cursă necompetitivă de hiking unde vă așteptă un gulaș delicios la finish.
           </p>
           <button
             type="button"
@@ -113,7 +178,7 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
+          <h1 class="text-3xl text-bookmark-blue font-Lucky">Kit Participare</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
             exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
@@ -141,7 +206,7 @@ function changeActiveIndex(i) {
         </div>
         <!-- Content -->
         <div class="flex flex-1 flex-col items-center lg:items-start">
-          <h1 class="text-3xl text-bookmark-blue">Lorem ipsum</h1>
+          <h1 class="text-3xl text-bookmark-blue font-Lucky">Detalii organizatorice</h1>
           <p class="text-bookmark-grey my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt ducimus
             exercitationem quo, unde fugit blanditiis labore eum pariatur quisquam suscipit
@@ -311,5 +376,20 @@ function changeActiveIndex(i) {
 .accordion-content.show {
   max-height: 150px; /* Adjust to fit your content height */
   opacity: 1;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fb923c;
+}
+.countdown-label {
+  font-size: 1rem;
+  color: #4b5563;
 }
 </style>
