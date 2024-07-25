@@ -47,12 +47,12 @@ const info2 = [
       <p class="text-gray-700 p-1 mt-3 mb-3">{{ item.content }}</p>
     </section>
     <section class="p-1">
-      <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-Lucky"> 2. Obligațiile participanților </h2>
+      <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold"> 2. Obligațiile participanților </h2>
       <div
         class="text-gray-700 p-1 mt-5 mb-3">
         Participarea la “ Turnu Roșu Challenge” se face pe proprie răspundere, în deplină cunoștință a aptitudinii de a participa la eveniment, a stării de sănătate fizică și mentală. Fiecare participant este responsabil pentru propria securitate și siguranță. Organizatorul, partenerii, sponsorii, voluntarii şi personalul care participă la realizarea evenimentului nu sunt responsabili pentru orice fel de rănire sau pagube de orice natură care pot surveni în timpul sau ca urmare a desfășurării evenimentului. Fiecare participant trebuie să semneze la preluarea numărului de concurs o declarație de proprie răspundere prin care își asumă riscurile ce pot rezulta din participarea la “ Turnu Roșu Challenge” .  Participanții au obligația de a asculta și de a respecta indicațiile/instrucțiunile organizatorului și ale personalului de concurs. Pachetul de înscriere nu poate fi expediat prin poștă în avans. Organizatorul poate interzice luarea startului sau continuarea cursei pentru orice participant, dacă acesta se prezintă în stare de ebrietate, este sub efectul substanțelor dopante sau este în stare de slăbiciune evidentă, boală, epuizare fizică sau psihică.
-        Parcurgerea traseului necesită experiență și unele cunoștințe, cum ar fi:  
-      <ul class="list-disc">
+        <strong>Parcurgerea traseului necesită experiență și unele cunoștințe, cum ar fi:</strong>
+      <ul class="list-disc py-2">
         <li>fiecare participant să aibă cel puțin o experiență generală despre concursurile de alergare, fiind pregătit din punct de vedere al condiției fizice;</li>
         <li>fiecare participant să aibă cunoștințe tehnice despre abordarea unui traseu neamenajat prin pădure;</li>
         <li>fiecare participant să fie capabil să urce și să coboare în siguranță o pantă înclinată în condiții dificile;</li>
@@ -60,7 +60,7 @@ const info2 = [
         <li>fiecare participant ar trebui să știe și să aibă o atitudine care să țină cont de faptul că oricât de multe măsuri de siguranță ar lua organizatorii, nu sunt și nu vor putea fi acoperite toate riscurile rezultate din natura competițiilor, mediul și condițiile în care se desfășoară acestea;</li>
         <li>fiecare participant trebuie să știe că niciun premiu nu este mai presus de sănătatea și viața lui și/sau a altor participanți și să acționeze în consecință pentru a se proteja atunci când simte sau observă un pericol.</li>
       </ul>
-      <ul class="list-disc"> Pericole posibile:
+      <ul class="list-disc py-2"> <strong>Pericole posibile:</strong>
         <li>accidentări prin alunecare datorate terenului;</li>
         <li>atac animal, câini sau urși;</li>
         <li>accidente cu automobile pe porțiunile asfaltate;</li>
