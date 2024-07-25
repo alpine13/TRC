@@ -5,11 +5,6 @@ const info1 = [
     content:
       'Turnu Roșu Challenge este o competiție de alergare cu caracter submontan. Traseul se desfășoară pe poteci marcate în Turnu Roșu și pe dealurile de la poalele munților Făgăraș fiind poarta de intrare spre Munții Făgăraș. Suprafața de alergare a traseelor este formată din: drum forestier, în marea majoritate poteci naturale și pășuni, adică iarbă și pământ. Vârsta minimă pentru înscriere este 18 ani la cursele de Cros și Semimaraton. Toți participanții sunt obligați să completeze formularul de înscriere online și declarația pe proprie răspundere, care atestă luarea la cunoștință a condițiilor și regulilor competiției. Formatul Power Hiking este unul nou, se încurajează participarea oamenilor care vor să parcurgă un traseu într-un ritm mai susținut sau mai lejer,competiția fiind necronometrată'
   },
-  {
-    title: '3. Înscrierea concurenților',
-    content:
-      'Înscrierile se vor face doar online completând formularul de înscriere pus la  dispoziție de organizator. Nu se fac înscrieri în ziua concursului și cu o săptămână înaintea evenimentului. Măsura este luată pentru a putea optimiza utilizarea resurselor logistice, pentru a evita risipa sau lipsa unor produse sau servicii pentru concurenții înscriși. ( De exemplu, estimarea produselor alimentare pentru punctele de alimentare, brunch, medalii, tricouri șamd.). Pentru a încuraja participarea locuitorilor din comuna Turnu Roșu de a participa la competiții de alergare montana, înscrierea va fi gratuita la oricare din probe in limita a 30 de locuri.'
-  }
 ];
 const info2 = [
   {
@@ -50,9 +45,8 @@ const info2 = [
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold"> 2. Obligațiile participanților </h2>
       <div
         class="text-gray-700 p-1 mt-5 mb-3">
-        Participarea la “ Turnu Roșu Challenge” se face pe proprie răspundere, în deplină cunoștință a aptitudinii de a participa la eveniment, a stării de sănătate fizică și mentală. Fiecare participant este responsabil pentru propria securitate și siguranță. Organizatorul, partenerii, sponsorii, voluntarii şi personalul care participă la realizarea evenimentului nu sunt responsabili pentru orice fel de rănire sau pagube de orice natură care pot surveni în timpul sau ca urmare a desfășurării evenimentului. Fiecare participant trebuie să semneze la preluarea numărului de concurs o declarație de proprie răspundere prin care își asumă riscurile ce pot rezulta din participarea la “ Turnu Roșu Challenge” .  Participanții au obligația de a asculta și de a respecta indicațiile/instrucțiunile organizatorului și ale personalului de concurs. Pachetul de înscriere nu poate fi expediat prin poștă în avans. Organizatorul poate interzice luarea startului sau continuarea cursei pentru orice participant, dacă acesta se prezintă în stare de ebrietate, este sub efectul substanțelor dopante sau este în stare de slăbiciune evidentă, boală, epuizare fizică sau psihică.
-        <strong>Parcurgerea traseului necesită experiență și unele cunoștințe, cum ar fi:</strong>
-      <ul class="list-disc py-2">
+        Participarea la “ Turnu Roșu Challenge” se face pe proprie răspundere, în deplină cunoștință a aptitudinii de a participa la eveniment, a stării de sănătate fizică și mentală. Fiecare participant este responsabil pentru propria securitate și siguranță. Organizatorul, partenerii, sponsorii, voluntarii şi personalul care participă la realizarea evenimentului nu sunt responsabili pentru orice fel de rănire sau pagube de orice natură care pot surveni în timpul sau ca urmare a desfășurării evenimentului. Fiecare participant trebuie să semneze la preluarea numărului de concurs o declarație de proprie răspundere prin care își asumă riscurile ce pot rezulta din participarea la “ Turnu Roșu Challenge” .  Participanții au obligația de a asculta și de a respecta indicațiile/instrucțiunile organizatorului și ale personalului de concurs. Pachetul de înscriere nu poate fi expediat prin poștă în avans. Organizatorul poate interzice luarea startului sau continuarea cursei pentru orice participant, dacă acesta se prezintă în stare de ebrietate, este sub efectul substanțelor dopante sau este în stare de slăbiciune evidentă, boală, epuizare fizică sau psihică.       
+      <ul class="list-disc py-2"> <strong>Parcurgerea traseului necesită experiență și unele cunoștințe, cum ar fi:</strong>
         <li>fiecare participant să aibă cel puțin o experiență generală despre concursurile de alergare, fiind pregătit din punct de vedere al condiției fizice;</li>
         <li>fiecare participant să aibă cunoștințe tehnice despre abordarea unui traseu neamenajat prin pădure;</li>
         <li>fiecare participant să fie capabil să urce și să coboare în siguranță o pantă înclinată în condiții dificile;</li>
@@ -70,10 +64,17 @@ const info2 = [
       </div>
     </section>
     <section class="p-1">
+      <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">3. Înscrierea concurenților</h2>
+      <div
+        class="text-gray-700 p-1 mt-5 mb-3">
+        Înscrierile se vor face doar online completând formularul de înscriere pus la dispoziție de organizator prin racehub.ro.
+        Nu se fac înscrieri în ziua concursului și cu o săptămână înaintea evenimentului. Măsura este luată pentru a putea optimiza utilizarea resurselor logistice, pentru a evita risipa sau lipsa unor produse sau servicii pentru concurenții înscriși. ( De exemplu, estimarea produselor alimentare pentru punctele de alimentare, brunch, medalii, tricouri șamd.)
+    </div>
+    </section>
+    <section class="p-1">
       <h2 class="text-xl md:text-2xl mt-10 text-gray-700 font-semibold">4. Taxa de participare</h2>
       <div
-        class="grid grid-rows-3 grid-cols-3 justify-items-center text-white bg-gray-800 font-bold rounded-xl text-normal lg:text-lg m-4 ml-2"
-      >
+        class="grid grid-rows-3 grid-cols-3 justify-items-center text-white bg-gray-800 font-bold rounded-xl text-normal lg:text-lg m-4 ml-2">
         <p class="p-2">Semimaraton</p>
         <p class="p-2">Cros</p>
         <p class="p-2">Power Hiking</p>
